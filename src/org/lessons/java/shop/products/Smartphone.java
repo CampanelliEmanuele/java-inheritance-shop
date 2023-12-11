@@ -30,4 +30,22 @@ public class Smartphone extends Product {
     private boolean validMemorySize(long memorySize) {
         return memorySize >= 0;
     }
+
+    public String getIMEI() {
+        return IMEI;
+    }
+
+    public void setIMEI(String IMEI) {
+        if (validIMEI(IMEI))
+            this.IMEI = IMEI;
+    }
+
+    public long getMemorySize() {
+        return memorySize;
+    }
+
+    public void setMemorySize(long memorySize) {
+        if (validMemorySize(memorySize))
+            this.memorySize = memorySize;
+    }
 }
