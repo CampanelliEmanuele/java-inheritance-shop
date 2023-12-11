@@ -48,4 +48,12 @@ public class Smartphone extends Product {
         if (validMemorySize(memorySize))
             this.memorySize = memorySize;
     }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "IMEI='" + IMEI + '\'' +
+                ", memorySize=" + memorySize +
+                '}';
+    }
 }

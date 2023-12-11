@@ -53,4 +53,13 @@ public class Tv extends Product {
     public void setSmart(boolean smart) {
         isSmart = smart;
     }
+
+    @Override
+    public String toString() {
+        return "Tv{" +
+                "height=" + height +
+                ", width=" + width +
+                ", isSmart=" + isSmart +
+                '}';
+    }
 }

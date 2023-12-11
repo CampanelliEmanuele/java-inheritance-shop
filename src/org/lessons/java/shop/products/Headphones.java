@@ -39,4 +39,12 @@ public class Headphones extends Product {
     public void setAreWired(boolean areWired) {
         this.areWired = areWired;
     }
+
+    @Override
+    public String toString() {
+        return "Headphones{" +
+                "color='" + color + '\'' +
+                ", areWired=" + areWired +
+                '}';
+    }
 }

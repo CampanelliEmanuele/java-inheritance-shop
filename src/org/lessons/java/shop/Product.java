@@ -103,4 +103,15 @@ public class Product {
         if (isValidPrice(price))
             this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "code=" + code +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", iva=" + iva +
+                '}';
+    }
 }
